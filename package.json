@@ -21,6 +21,7 @@
     }
   ],
   "dependencies": {
-    "com.bigbearstudios.bbunity-test-support": "1.2.0"
+    "com.bigbearstudios.bbunity-test-support": "1.2.0",
+    "com.unity.mathematics": "1.2.6"
   }
 }
