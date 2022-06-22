@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 
-namespace BBUnity.Math
+namespace BBUnity.Mathematics
 {
     public static class Easing
     {
@@ -14,7 +14,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStart2(float t) => Utility.Pow2(t);
+        public static float SmoothStart2(float t) => Math.Pow2(t);
         
         /// <summary>
         /// Easing function which modifies a normalised t value to start smoothly and end linearly.
@@ -23,7 +23,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStart3(float t) => Utility.Pow3(t);
+        public static float SmoothStart3(float t) => Math.Pow3(t);
         
         /// <summary>
         /// Easing function which modifies a normalised t value to start smoothly and end linearly.
@@ -32,7 +32,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStart4(float t) => Utility.Pow4(t);
+        public static float SmoothStart4(float t) => Math.Pow4(t);
         
         #endregion
 
@@ -45,7 +45,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStop2(float t) => Utility.Flip(Utility.Pow2(Utility.Flip(t)));
+        public static float SmoothStop2(float t) => Math.Flip(Math.Pow2(Math.Flip(t)));
         
         /// <summary>
         /// Easing function which modifies a normalised t value to start linearly and stop smoothly.
@@ -54,7 +54,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStop3(float t) => Utility.Flip(Utility.Pow3(Utility.Flip(t)));
+        public static float SmoothStop3(float t) => Math.Flip(Math.Pow3(Math.Flip(t)));
         
         /// <summary>
         /// Easing function which modifies a normalised t value to start linearly and stop smoothly.
@@ -63,7 +63,7 @@ namespace BBUnity.Math
         /// </summary>
         /// <param name="t">Assumed to be in the range of [0-1]</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float SmoothStop4(float t) => Utility.Flip(Utility.Pow4(Utility.Flip(t)));
+        public static float SmoothStop4(float t) => Math.Flip(Math.Pow4(Math.Flip(t)));
 
         #endregion
         

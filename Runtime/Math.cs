@@ -1,10 +1,12 @@
 using System.Runtime.CompilerServices;
 using UnityEngine.Assertions;
 
-namespace BBUnity.Math
+namespace BBUnity.Mathematics
 {
-    public static class Utility
+    public static class Math
     {
+        #region Arithmatic
+
         /// <summary>
         /// Raises the provided value to a power of 2. 
         /// </summary>
@@ -32,5 +34,7 @@ namespace BBUnity.Math
             Assert.IsTrue(value >= 0.0f && value <= 1.0f);
             return 1.0f - value;
         }
+        
+        #endregion
     }
 }
