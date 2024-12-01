@@ -6,9 +6,9 @@
   "unity": "2020.3",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/big-bear-studios-open-source/bbunitymath.git"
+    "url": "https://github.com/bigbearstudios-unity/math.git"
   },
-  "bugs": "https://gitlab.com/big-bear-studios-open-source/bbunitymath/-/issues",
+  "bugs": "https://github.com/bigbearstudios-unity/math/issues",
   "author": {
     "name": "Big Bear Studios",
     "email": "development@bigbearstudios.co.uk",
@@ -21,7 +21,7 @@
     }
   ],
   "dependencies": {
-    "com.bigbearstudios.bbunity-test-support": "1.2.0",
+    "com.bigbearstudios.bbunity-test-support": "2.1.1",
     "com.unity.mathematics": "1.2.6"
   }
 }
